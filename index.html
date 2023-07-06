@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="options">
+          <button class="btn btn-selected">delete selected</button>
+          <button class="btn select-post">select post</button>
+          <button class="btn btn-hate-speech">checking "hate speech"</button>
+
+          <form>
+            <input
+              class="search"
+              type="text"
+              name="name"
+              placeholder="search by name"
+            />
+            <input
+              class="search"
+              type="text"
+              name="email"
+              placeholder="search by email"
+            />
+            <input
+              class="search"
+              type="text"
+              name="body"
+              placeholder="search by body"
+            />
+            <button>search</button>
+          </form>
+          <div class="btn btn-page">
+            <button class="btn-page-left" data-togo="1"><-</button>
+            <span class="page-current">1</span>
+            <button class="btn-page-right" data-togo="2">-></button>
+          </div>
+        </div>
+
+        <div class="comments">
+          <table id="comment-table">
+            <thead>
+              <tr>
+                <th>Select</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Body</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="comment-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

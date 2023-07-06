@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  font-size: 10px;
+}
+
+.container {
+  padding: 20px;
+  margin: 5px;
+  font-size: 10px;
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-overflow: ellipsis;
+  border: 1px solid black;
+}
+
+.comment-field {
+  display: grid;
+  grid-template-columns: 40px 1fr 0.7fr 1fr 100px;
+  margin-top: 5px;
+}
+
+.comment-field button {
+  height: 25px;
+  width: 60px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.search {
+  width: 100%;
+}
+input {
+  height: 10px;
+  width: 10px;
+}
+
+.hate-speech {
+  background: yellow;
+}
+//
+@media (max-width: 850px) {
+  body {
+    display: none;
+  }
+}
